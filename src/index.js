@@ -5,16 +5,14 @@ import './css/styles.css';
 import Currency from './services/currency';
 
 function clearFields() {
-  $("#currencyAmount").empty();
-  $("#currencyOne").empty();
-  $("#currencyTwo").empty();
+  $("#currencyAmount, #currencyOne, #currencyTwo, #invalidInput, #currencyOutput, #error").empty();
 }
 
 function conversionOutput(response, currencyOne, currencyTwo, currencyAmount) {
   if (currencyAmount <= 0) {
     $("#invalidInput").text("Please enter an amount greater than 0.00");
   } else if (response.result === "success") {
-    $("#currencyOutput").text(`Something with ${currencyAmount} ${currencyOne} converts to ${response.conversion_result} ${currencyTwo} and possibly adding that it's a rate of 1 ${currencyOne} to ${response.conversion_rate} ${currencyTwo}. `);
+    $("#currencyOutput").text(`Your ${currencyAmount} ${currencyOne} converts to ${response.conversion_result} ${currencyTwo} at a rate of 1 ${currencyOne} to ${response.conversion_rate} ${currencyTwo}. `);
   } else {
     $("#error").text(`There was an error: ${response.result} ${response.error_type}`);
   }
