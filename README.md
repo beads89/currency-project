@@ -24,10 +24,10 @@ _This application uses an API to convert different currencies to other types. Yo
 * Clone or download github repository to machine
 * If a .zip was downloaded, extract contents and open folder with Visual Studio Code
 * If cloned, navigate to and open cloned folder with Visual Studio Code
-* Create file ".env" at the root level
+* Create a file named ".env" at the root level
 * In ".env", write "API_KEY="
-* Go to https://www.exchangerate-api.com/ and obtain an API key
-* Insert API key in ".env" file after the "=" sign.
+* Sign up at https://app.exchangerate-api.com/sign-up to obtain an API key
+* Insert API key in ".env" file after the "=" sign
 * Open Terminal at root level and install bundles via "npm install"
 * Build the environment using "npm run build"
 * Run the environment using "npm run start"
