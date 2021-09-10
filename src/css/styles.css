@@ -1,4 +1,11 @@
-.jumbotron {
+/* .jumbotron {
   background-color: white;
+} */
+
+.center {
+  text-align: center;
 }
 
+.spaceout {
+  margin-bottom: 1.5em;
+}

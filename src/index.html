@@ -5,33 +5,43 @@
   <title>Currency Exchange</title>
 </head>
 <body>
-  <div class="container jumbotron pad">
-    <h2>Currency Exchange Machine</h2>
-    <h4>Use the options below to convert a currency of your choice to another one.</h4>
+  <div class="container jumbotron">
+    <div class="center">
+      <h1 class="spaceout">Currency Exchange Machine</h1>
+      <h4 class="spaceout">Use the options below to convert a currency of your choice to another one.</h4>
+    </div>
     <form id="exchange">
-      <label for="currencyFrom"><h5>Convert from:</h5></label>
-      <select name="currencyFrom" id="currencyFrom">
-        <option value="USD">USD - United States Dollar</option>
-        <option value="EUR">EUR - Euro</option>
-        <option value="JPY">JPY - Japanese Yen</option>
-        <option value="CAD">CAD - Canadian Dollar</option>
-        <option value="KRW">KRW - South Korean Won</option>
-        <option value="PHP">PHP - Phillipine Peso</option>
-        <option value="NZD">NZD - New Zealand Dollar</option>
-      </select>
-      <label for="currencyTo"><h5>Convert to:</h5></label>
-      <select name="currencyTo" id="currencyTo">
-        <option value="USD">USD - United States Dollar</option>
-        <option value="EUR">EUR - Euro</option>
-        <option value="JPY">JPY - Japanese Yen</option>
-        <option value="CAD">CAD - Canadian Dollar</option>
-        <option value="KRW">KRW - South Korean Won</option>
-        <option value="PHP">PHP - Phillipine Peso</option>
-        <option value="NZD">NZD - New Zealand Dollar</option>
-      </select>
+      <div class="row spaceout">
+        <div class="col-6">
+          <label for="currencyFrom"><h5>Convert from:</h5></label>
+          <select name="currencyFrom" id="currencyFrom">
+            <option value="USD">USD - United States Dollar</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="JPY">JPY - Japanese Yen</option>
+            <option value="CAD">CAD - Canadian Dollar</option>
+            <option value="KRW">KRW - South Korean Won</option>
+            <option value="PHP">PHP - Phillipine Peso</option>
+            <option value="NZD">NZD - New Zealand Dollar</option>
+          </select>
+        </div>
+        <div class="col-4">
+          <label for="currencyTo"><h5>To:</h5></label>
+          <select name="currencyTo" id="currencyTo">
+            <option value="USD">USD - United States Dollar</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="JPY">JPY - Japanese Yen</option>
+            <option value="CAD">CAD - Canadian Dollar</option>
+            <option value="KRW">KRW - South Korean Won</option>
+            <option value="PHP">PHP - Phillipine Peso</option>
+            <option value="NZD">NZD - New Zealand Dollar</option>
+          </select>
+        </div>
+      </div>
       <label for="currencyAmount"><h5>Enter amount to convert:</h5></label>
       <input type="number" step="0.01" name="currencyAmount" id="currencyAmount">
-      <button class="btn btn-success" type="submit">Exchange!</button>
+      <div class="form-group">
+        <button class="btn btn-success" type="submit">Exchange!</button>
+      </div>
     </form>
     <p id="currencyOutput"></p>
     <p id="error"></p>
