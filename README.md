@@ -1,41 +1,67 @@
-# _{Application Name}_
+# _Currency Exchanger_
 
-#### By _**{List of contributors}**_
+#### By _**Brandon Eads**_
 
 ---
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This application uses an API to convert different currencies to other types. You can even convert a currency to the same exact one if you really want to!_
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
-
+* _HTML_
+* _CSS_
+* _JavaScript_
+* _Bootstrap framework for CSS and JavaScript_
+* _jQuery library for JavaScript_
+* _ESlint_
+* _Babel_
 
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Clone or download github repository to machine
+* If a .zip was downloaded, extract contents and open folder with Visual Studio Code
+* If cloned, navigate to and open cloned folder with Visual Studio Code
+* Create file ".env" at the root level
+* In ".env", write "API_KEY="
+* Go to https://www.exchangerate-api.com/ and obtain an API key
+* Insert API key in ".env" file after the "=" sign.
+* Open Terminal at root level and install bundles via "npm install"
+* Build the environment using "npm run build"
+* Run the environment using "npm run start"
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? Does it require building packages? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _No known. Please contact if any are found!_
+
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+MIT License
+
+Copyright (c) 2021 Brandon Eads
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ## Contact Information
 
-_{Add your contact information here.}_
+Brandon Eads - brandon181989@hotmail.com
