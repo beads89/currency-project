@@ -9,7 +9,18 @@
     <h2>Currency Exchange Machine</h2>
     <h4>Use the options below to convert a currency of your choice to another one.</h4>
     <form id="exchange">
-      <label for="baseCurrency"></label>
+      <label for="currencyAmount">Enter amount to convert:</label>
+      <input type="number" step="0.01" name="currencyAmount" id="currencyAmount">
+      <label for="currencyOne">Convert:</label>
+      <select name="currencyOne" id="currencyOne">
+        <option value="USD">USD - United States Dollar</option>
+        <option value="EUR">EUR - Euro</option>
+        <option value="JPY">JPY - Japanese Yen</option>
+        <option value="CAD">CAD - Canadian Dollar</option>
+        <option value="KRW">KRW - South Korean Won</option>
+        <option value="PHP">PHP - Phillipine Peso</option>
+        <option value="NZD">NZD - New Zealand Dollar</option>
+      </select>
     </form>
   </div>
 </body>
