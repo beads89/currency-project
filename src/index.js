@@ -31,8 +31,9 @@ $(function () {
     event.preventDefault();
     clearFields();
     let currencyAmount = $("#currencyAmount").val();
-    let currencyOne = $("#currencyOne").val();
-    let currencyTwo = $("#currencyTwo").val();
+    let currencyOne = $("#currencyFrom option:selected").val();
+    let currencyTwo = $("#currencyTo option:selected").val();
     makeApiCall(currencyOne, currencyTwo, currencyAmount);
+    console.log(currencyOne, currencyTwo, currencyAmount);
   });
 });
