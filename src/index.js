@@ -14,7 +14,7 @@ function conversionOutput(response, currencyOne, currencyTwo, currencyAmount) {
   } else if (response.result === "success") {
     $("#currencyOutput").text(`Your ${currencyAmount} ${currencyOne} converts to ${response.conversion_result} ${currencyTwo} at a rate of 1 ${currencyOne} to ${response.conversion_rate} ${currencyTwo}. `);
   } else {
-    $("#error").text(`There was an error: ${response.result} ${response.error_type}`);
+    $("#error").text(`There was an error: ${response.status}`);
   }
 }
 
