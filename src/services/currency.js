@@ -12,20 +12,3 @@ export default class Currency {
     }
   }
 }
-
-// https://v6.exchangerate-api.com/v6/YOUR-API-KEY/pair/EUR/GBP
-  //Uses first currency as base and converts it to second currency.
-  //Only returns the conversion rate. ie: EUR to GBP at a rate of 1 to 0.8412
-
-// https://v6.exchangerate-api.com/v6/YOUR-API-KEY/pair/EUR/GBP/AMOUNT
-  //Converts the same as above, except also converts to the AMOUNT specified
-
-// Currencies to convert:
-  // EUR - Euro - European Union
-  // JPY - Japanese Yen - Japan
-  // CAD - Canadian Dollar - Canada
-  // KRW - South Korean Won - South Korea
-  // PHP - Phillipine Peso - Phillipines
-  // NZD - New Zealand Dollar - New Zealand
-  // USD - United States Dollar - United States
-  // Add others, possibly all?
