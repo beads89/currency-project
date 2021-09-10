@@ -12,9 +12,9 @@ function conversionOutput(response, currencyOne, currencyTwo, currencyAmount) {
   if (currencyAmount <= 0) {
     $("#invalidInput").text("Please enter an amount greater than 0.00");
   } else if (response.result === "success") {
-    $("#currencyOutput").text(`Your ${currencyAmount} ${currencyOne} converts to ${response.conversion_result} ${currencyTwo} at a rate of 1 ${currencyOne} to ${response.conversion_rate} ${currencyTwo}. `);
+    $("#currencyOutput").text(`Your ${currencyAmount} ${currencyOne} converts to ${response.conversion_result.toFixed(2)} ${currencyTwo} at a rate of 1 ${currencyOne} to ${response.conversion_rate.toFixed(2)} ${currencyTwo}. `);
   } else {
-    $("#error").text(`There was an error: ${response.status}`);
+    $("#error").text(`There was an error: ${response}. Please be sure both currency types are valid.`);
   }
 }
 
@@ -32,6 +32,5 @@ $(function () {
     let currencyOne = $("#currencyFrom option:selected").val();
     let currencyTwo = $("#currencyTo option:selected").val();
     makeApiCall(currencyOne, currencyTwo, currencyAmount);
-    console.log(currencyOne, currencyTwo, currencyAmount);
   });
 });
