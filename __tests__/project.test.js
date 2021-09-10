@@ -1,0 +1,1 @@
+import { ClassExample1, ClassExample2 } from "../src/project";
