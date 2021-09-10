@@ -5,12 +5,10 @@
   <title>Currency Exchange</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container jumbotron pad">
     <h2>Currency Exchange Machine</h2>
     <h4>Use the options below to convert a currency of your choice to another one.</h4>
     <form id="exchange">
-      <label for="currencyAmount"><h5>Enter amount to convert:</h5></label>
-      <input type="number" step="0.01" name="currencyAmount" id="currencyAmount">
       <label for="currencyFrom"><h5>Convert from:</h5></label>
       <select name="currencyFrom" id="currencyFrom">
         <option value="USD">USD - United States Dollar</option>
@@ -31,6 +29,8 @@
         <option value="PHP">PHP - Phillipine Peso</option>
         <option value="NZD">NZD - New Zealand Dollar</option>
       </select>
+      <label for="currencyAmount"><h5>Enter amount to convert:</h5></label>
+      <input type="number" step="0.01" name="currencyAmount" id="currencyAmount">
       <button class="btn btn-success" type="submit">Exchange!</button>
     </form>
     <p id="currencyOutput"></p>
