@@ -20,9 +20,12 @@ export default class Currency {
 // https://v6.exchangerate-api.com/v6/YOUR-API-KEY/pair/EUR/GBP/AMOUNT
   //Converts the same as above, except also converts to the AMOUNT specified
 
-// Currencies to convert: EUR - Euro
-  // JPY - Japanese Yen
-  // CAD - Canadian Dollar
-  // KRW - South Korean Won
-  // PHP - Phillipine Peso
-  // NZD - New Zealand Dollar
+// Currencies to convert:
+  // EUR - Euro - European Union
+  // JPY - Japanese Yen - Japan
+  // CAD - Canadian Dollar - Canada
+  // KRW - South Korean Won - South Korea
+  // PHP - Phillipine Peso - Phillipines
+  // NZD - New Zealand Dollar - New Zealand
+  // USD - United States Dollar - United States
+  // Add others, possibly all?
