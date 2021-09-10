@@ -5,7 +5,9 @@ import './css/styles.css';
 import Currency from './services/currency';
 
 function clearFields() {
-  $(".REPLACE").empty();
+  $("#currencyAmount").empty();
+  $("#currencyOne").empty();
+  $("#currencyTwo").empty();
   // etc., etc.
 }
 
@@ -24,3 +26,14 @@ async function makeApiCall(currencyOne, currencyTwo, currencyAmount) {
   const response = await Currency.conversionRate(currencyOne, currencyTwo, currencyAmount);
   conversionOutput(response, currencyOne, currencyTwo, currencyAmount);
 }
+
+$(function () {
+  $("form#exchange").on("submit", function (event) {
+    event.preventDefault();
+    clearFields();
+    let currencyAmount = $("#currencyAmount").val();
+    let currencyOne = $("#currencyOne").val();
+    let currencyTwo = $("#currencyTwo").val();
+    makeApiCall(currencyOne, currencyTwo, currencyAmount);
+  });
+});
